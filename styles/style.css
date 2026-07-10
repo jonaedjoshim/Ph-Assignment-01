@@ -352,12 +352,42 @@ header {
     text-align: center;
 }
 
+/* Event Highlights Section */
+
+.highlights-section {
+    padding: 50px 0;
+}
+
+.highlights-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.highlight-card {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    font-weight: 500;
+}
+
 /* footer */
 
 .footer {
     padding: 70px 0 30px;
     background-color: #111827;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .footer-top {
