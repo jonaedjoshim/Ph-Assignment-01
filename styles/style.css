@@ -9,7 +9,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #575757;
-    background-color: #F9F9F9;
 }
 
 .container {
@@ -96,4 +95,42 @@ header {
 
 .btn-primary:hover {
     background-color: #2563EB;
+}
+
+/* hero section */
+
+.hero {
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    margin-bottom: 240px;
 }
