@@ -189,3 +189,93 @@ header {
     margin: 0 24px 28px;
     font-size: 14px;
 }
+
+/* secure your spot section */
+
+.pricing-section {
+    padding: 50px 0;
+}
+
+.pricing-section .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-section .section-title h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pricing-card {
+    background: #F8F9FB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 40px 30px;
+}
+
+.pricing-card h3 {
+    font-size: 14px;
+    color: #888888;
+}
+
+.pricing-card h2 {
+    font-size: 38px;
+}
+
+.pricing-card hr {
+    margin: 20px 0;
+    color: #E5E7EB
+}
+
+.pricing-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 14px;
+    color: #333333;
+}
+
+.pricing-card ul li::marker {
+    color: #2563EB;
+}
+
+.pricing-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-outline {
+    outline: 1px solid #2563EB;
+    color: #2563EB;
+    background: #FFFFFF;
+}
+
+.featured {
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    border: 1px solid #0D1B2A;
+}
+
+.featured h2 {
+    color: #FFFFFF;
+}
+
+.featured ul li {
+    color: #F3F4F6;
+}
