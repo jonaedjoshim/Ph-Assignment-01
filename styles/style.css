@@ -318,6 +318,40 @@ header {
     font-size: 15px;
 }
 
+/* Hackathon Challenge Section */
+
+.hackathon-section {
+    padding: 50px 0;
+}
+
+.hackathon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.hackathon-card {
+    background-color: #F8F9FB;
+    padding: 35px 30px;
+    border-radius: 12px;
+    border-right: 5px solid #2563EB;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hackathon-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hackathon-card p {
+    font-size: 15px;
+}
+
+.hackathon-btn {
+    text-align: center;
+}
+
 /* footer */
 
 .footer {
@@ -362,7 +396,7 @@ header {
 }
 
 .social-links a:hover {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .footer hr {
