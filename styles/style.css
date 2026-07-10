@@ -50,7 +50,7 @@ textarea {
     outline: none;
 }
 
-/* navbar section */
+/* navbar */
 header {
     background-color: #FFFFFF;
 }
@@ -60,6 +60,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    position: relative;
 }
 
 .logo img {
@@ -97,8 +98,27 @@ header {
     background-color: #2563EB;
 }
 
-/* hero section */
+/* hamburger menu - hidden on desktop */
+.menu-toggle {
+    display: none;
+}
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    background: #0D1B2A;
+    border-radius: 2px;
+}
+
+/* hero */
 .hero {
     background-image: url("../assets/banner.jpg");
     background-size: cover;
@@ -115,6 +135,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px;
 }
 
 .hero-content {
@@ -135,8 +156,11 @@ header {
     margin-bottom: 240px;
 }
 
-/* meet the speakers section */
+.hero-content .btn-primary {
+    display: inline-block;
+}
 
+/* speakers */
 .speakers-section {
     padding: 100px 0;
 }
@@ -190,8 +214,7 @@ header {
     font-size: 14px;
 }
 
-/* secure your spot section */
-
+/* pricing */
 .pricing-section {
     padding: 25px 0;
 }
@@ -251,7 +274,8 @@ header {
 }
 
 .pricing-btn {
-    display: inline-block;
+    display: block;
+    text-align: center;
     width: 100%;
     padding: 14px;
     background-color: #2563EB;
@@ -280,11 +304,9 @@ header {
     color: #F3F4F6;
 }
 
-/* AI Challenge Section*/
-/* Conference Schedule Section */
-
+/* schedule */
 .schedule-section {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 
 .schedule-container {
@@ -318,10 +340,9 @@ header {
     font-size: 15px;
 }
 
-/* Hackathon Challenge Section */
-
+/* hackathon */
 .hackathon-section {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 
 .hackathon-container {
@@ -352,10 +373,13 @@ header {
     text-align: center;
 }
 
-/* Event Highlights Section */
+.hackathon-btn .btn-primary {
+    padding: 14px 30px;
+}
 
+/* highlights */
 .highlights-section {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 
 .highlights-container {
@@ -383,7 +407,6 @@ header {
 }
 
 /* footer */
-
 .footer {
     padding: 70px 0 30px;
     background-color: #111827;
@@ -448,4 +471,136 @@ header {
     gap: 16px;
     color: #FFFFFF40;
     font-size: 15px;
+}
+
+/* RESPONSIVE */
+
+/* tablet */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+    .highlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-card {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* small tablet / large mobile */
+@media (max-width: 768px) {
+
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 16px 20px;
+        width: 100%;
+    }
+
+    .menu-toggle:checked~.nav-menu {
+        max-height: 300px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar .btn-primary {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-overlay {
+        min-height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .speakers-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .schedule-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hackathon-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-btm {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .btn-primary {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .highlights-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-card {
+        padding: 30px 20px;
+    }
+
+    .speaker-card img {
+        height: 260px;
+    }
 }
