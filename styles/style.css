@@ -279,3 +279,72 @@ header {
 .featured ul li {
     color: #F3F4F6;
 }
+
+/* AI Challenge Section (Will Be Added Later) */
+
+/* footer */
+
+.footer {
+    padding: 70px 0 30px;
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-container img {
+    width: 32px;
+}
+.logo-container h2 {
+    color: #D1D5DB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-links a {
+    color: #D1D5DB;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin-bottom: 25px;
+}
+
+.copyright {
+    text-align: center;
+    color: #FFFFFF40;
+    font-size: 15px;
+}
+
+.footer-btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: #FFFFFF40;
+    font-size: 15px;
+}
