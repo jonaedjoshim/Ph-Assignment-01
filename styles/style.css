@@ -193,7 +193,7 @@ header {
 /* secure your spot section */
 
 .pricing-section {
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .pricing-section .section-title {
@@ -280,7 +280,43 @@ header {
     color: #F3F4F6;
 }
 
-/* AI Challenge Section (Will Be Added Later) */
+/* AI Challenge Section*/
+/* Conference Schedule Section */
+
+.schedule-section {
+    padding: 50px 0;
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.schedule-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #2563EB;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-card span {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #2563EB;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.schedule-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.schedule-card p {
+    font-size: 15px;
+}
 
 /* footer */
 
@@ -297,7 +333,7 @@ header {
     margin-bottom: 30px;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -306,6 +342,7 @@ header {
 .logo-container img {
     width: 32px;
 }
+
 .logo-container h2 {
     color: #D1D5DB;
     font-size: 16px;
